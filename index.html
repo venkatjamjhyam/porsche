@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche India</title>
+    <link rel="icon" type="image/png" href="./images/porsche_logo_2-transparent-enhanced.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container-fluid px-lg-5 px-3">
+            <button class="btn nav-meta-btn text-white border-0 p-0 d-flex align-items-center gap-2" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu">
+                <i class="bi bi-list fs-5"></i>
+                <span class="small d-none d-sm-inline">Menu</span>
+            </button>
+            <a class="navbar-brand mx-auto text-center" href="#hero" aria-label="Porsche homepage">
+                <img src="./images/porsche_logo.png" alt="Porsche" class="navbar-logo img-fluid">
+            </a>
+            <a class="btn nav-meta-btn icon-only text-white border-0 p-0" href="#dealer" aria-label="Account">
+                <i class="bi bi-person fs-5"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start text-bg-dark border-end border-secondary-subtle" tabindex="-1" id="mainMenu"
+        aria-labelledby="mainMenuLabel">
+        <div class="offcanvas-header px-4 pt-4">
+            <h3 class="offcanvas-title brand-logo fs-4" id="mainMenuLabel">PORSCHE</h3>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-4">
+            <div class="d-grid gap-3 menu-links">
+                <a href="#models" class="menu-link" data-bs-dismiss="offcanvas">Models</a>
+                <a href="#purchase" class="menu-link" data-bs-dismiss="offcanvas">Vehicle Purchase</a>
+                <a href="#services" class="menu-link" data-bs-dismiss="offcanvas">Services</a>
+                <a href="#experience" class="menu-link" data-bs-dismiss="offcanvas">Experience</a>
+                <a href="#dealer" class="menu-link" data-bs-dismiss="offcanvas">Find a Dealer</a>
+            </div>
+            <div class="menu-region mt-5 pt-4 border-top border-secondary-subtle">
+                <p class="text-uppercase small text-white-50 mb-2">Region</p>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-globe-central-south-asia-fill"></i>
+                    <span>India / International</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero d-flex align-items-end" id="hero">
+        <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+            <source src="./images/video porsche.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container-fluid px-lg-5 px-3 position-relative hero-shell">
+            <div class="row min-vh-100 align-items-center hero-row">
+                <div class="col-xl-5 col-lg-6">
+                    <p class="hero-kicker mb-2 reveal-up"></p>
+                    <h1 class="hero-title mb-4 reveal-up">The new Cayenne Electric.</h1>
+                    <div class="reveal-up">
+                        <a href="#models" class="btn btn-outline-light hero-btn px-4 py-2">Discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-meta reveal-up">
+                <p class="hero-disclaimer mb-0">The all-electric Cayenne at standstill. The vehicle shown is a concept
+                    study and not available as standard production equipment.</p>
+                <!-- <button class="btn btn-outline-light rounded-0 hero-control-btn d-inline-flex align-items-center justify-content-center" id="videoToggle" type="button" aria-label="Pause video">
+                    <i class="bi bi-pause-fill"></i>
+                </button> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-pad bg-white" id="models">
+            <div class="container">
+                <div class="row g-4 row-cols-1 row-cols-md-3 teaser-row">
+                    <div class="col-12 col-md-4">
+                        <article class="teaser-card card text-white border-0 overflow-hidden">
+                            <img src="https://uncrate.com/p/2024/11/porsche-taycan-gts-1.jpg" class="card-img" alt="Porsche Macan Electric">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3 class="h5 fw-normal mb-1">Taycan GTS.</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Electric sports saloon</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <p class="teaser-copy mb-0">Dynamic presence, all-electric performance and the unmistakable feel
+                            of a Porsche grand tourer.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="teaser-card card text-white border-0 overflow-hidden">
+                            <img src="https://hagerty-media-prod.imgix.net/2023/04/Porsche-911-Sport-Classic-SCS-35-e1682093873899.jpg?auto=format%2Ccompress&ixlib=php-3.3.0" class="card-img" alt="Porsche 911 Turbo S">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3 class="h5 fw-normal mb-1">911</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Iconic one</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <p class="teaser-copy mb-0">A modern interpretation of a classic silhouette, blending everyday
+                            usability with focused driving precision.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="teaser-card card text-white border-0 overflow-hidden">
+                            <img src="https://th.bing.com/th/id/OIP.o695n3-RIz0z6pgE88beNgHaFj?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img" alt="Porsche Panamera 4">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h3 class="h5 fw-normal mb-1">Panamera</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Executive performance</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                        <p class="teaser-copy mb-0">Long-distance comfort and sports-car responsiveness meet in a
+                            luxurious, highly capable four-door Porsche.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pad section-dark" id="purchase">
+            <div class="container">
+                <div class="journey-head">
+                    <h2 class="journey-title mb-0">Your Porsche journey starts now.</h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <article class="journey-card">
+                            <img src="./images/Porsche_911E_-22.jpg" alt="Porsche 911">
+                            <div class="journey-copy">
+                                <div class="model-script">911</div>
+                                <div class="journey-footer">
+                                    <div>
+                                        <span class="journey-tag">Gasoline</span>
+                                        <p class="mb-0">Iconic rear-engine sports car. Coupe, Cabriolet and more.</p>
+                                    </div>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="journey-card">
+                            <img src="./images/718.avif" alt="Porsche 718">
+                            <div class="journey-copy">
+                                <div class="model-script">718</div>
+                                <div class="journey-footer">
+                                    <div>
+                                        <span class="journey-tag">Spyder RS</span>
+                                        <p class="mb-0">Mid-engine sports car with two seats and a focused driving feel.
+                                        </p>
+                                    </div>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="journey-card">
+                            <img src="./images/taycan.webp" alt="Porsche Taycan">
+                            <div class="journey-copy">
+                                <div class="model-script">Taycan</div>
+                                <div class="journey-footer">
+                                    <div>
+                                        <span class="journey-tag">Electric</span>
+                                        <p class="mb-0">Electric sports car with four doors and up to five seats.</p>
+                                    </div>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="journey-card">
+                            <img src="./images/panamera.avif" alt="Porsche Panamera">
+                            <div class="journey-copy">
+                                <div class="model-script">Panamera</div>
+                                <div class="journey-footer">
+                                    <div>
+                                        <span class="journey-tag">Hybrid</span>
+                                        <span class="journey-tag">Gasoline</span>
+                                        <p class="mb-0">Luxury saloon with a high level of comfort and four doors.</p>
+                                    </div>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="journey-card">
+                            <img src="./images/macan.avif" alt="Porsche Macan">
+                            <div class="journey-copy">
+                                <div class="model-script">Macan</div>
+                                <div class="journey-footer">
+                                    <div>
+                                        <span class="journey-tag">Electric</span>
+                                        <p class="mb-0">Sporty compact SUV with four doors and versatile utility.</p>
+                                    </div>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="journey-card">
+                            <img src="./images/cayenne.avif" alt="Porsche Cayenne">
+                            <div class="journey-copy">
+                                <div class="model-script">Cayenne</div>
+                                <div class="journey-footer">
+                                    <div>
+                                        <span class="journey-tag">Electric</span>
+                                        <span class="journey-tag">Hybrid</span>
+                                        <span class="journey-tag">Gasoline</span>
+                                        <p class="mb-0">Versatile SUV with up to five seats and strong road presence.
+                                        </p>
+                                    </div>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pad discover-zone" id="experience">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="discover-title mb-0">Discover</h2>
+                </div>
+                <div class="row g-3 row-cols-1 row-cols-md-3">
+                    <div class="col-12 col-md-4">
+                        <article class="discover-card">
+                            <img src="https://images.adsttc.com/media/images/5742/748b/e58e/cee2/f800/03ec/large_jpg/Porsche_HQ_Atlanta_(20).jpg?1463972957 alt="Porsche E-Performance">
+                            <div class="discover-copy">
+                                <h3 class="h5 fw-normal mb-1">Porsche Experience.</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Drive the brand</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="discover-card">
+                            <img src="https://www.selectscience.net/accelerating-science/images/Battery-Testing-Article-Accelerating-Science-Special-Feature-2023-Aug8.jpg" alt="Porsche Tequipment">
+                            <div class="discover-copy">
+                                <h3 class="h5 fw-normal mb-1">E-Performance.</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Sustainable mobility</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="discover-card">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.Eq8Oo3xFvecFFgGDHBTvBAHaE7?w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Porsche Exclusive Manufaktur">
+                            <div class="discover-copy">
+                                <h3 class="h5 fw-normal mb-1">Porsche Finder.</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small">Find your next Porsche</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-shell" id="dealer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-scroll text-center">
+                    <a href="#hero" class="footer-top-link">
+                        <i class="bi bi-chevron-up"></i>
+                        <span>Scroll up</span>
+                    </a>
+                </div>
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-3">
+                        <h3 class="footer-heading">Current Region / Language</h3>
+                        <div class="d-flex align-items-center gap-2 text-white mb-2">
+                            <i class="bi bi-globe-central-south-asia-fill"></i>
+                            <span>International / English</span>
+                        </div>
+                        <button class="footer-social-link border-0 bg-transparent">Change</button>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="footer-heading">Contact & Services</h3>
+                        <ul class="footer-links list-unstyled mb-0">
+                            <li><button class="footer-social-link border-0 bg-transparent">Get in touch</button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Find a dealer</button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Newsletter</button></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="footer-heading">Company</h3>
+                        <ul class="footer-links list-unstyled mb-0">
+                            <!-- <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Global Partnership Council</a></li>
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Newsroom & Press</a></li> -->
+                            <li><button class="footer-social-link border-0 bg-transparent">Investor Relations</button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Career</button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Global Partnership Council</button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Compliance</button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Newsroom & Press</button></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h3 class="footer-heading">Porsche in the Web</h3>
+                        <ul class="footer-links list-unstyled mb-0">
+                            <li><button class="footer-social-link border-0 bg-transparent">Porsche Homepage </button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Porsche Configurator </button></li>
+                            <li><button class="footer-social-link border-0 bg-transparent">Porsche Connect </button></li>
+                            <!-- <li><a href="#">Porsche Configurator</a></li>
+                            <li><a href="#">Porsche Connect</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social d-flex flex-wrap align-items-center justify-content-between gap-4">
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="footer-social-link border-0 bg-transparent" aria-label="Facebook"><i class="bi bi-facebook"></i></button>
+                        <button class="footer-social-link border-0 bg-transparent" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <button class="footer-social-link border-0 bg-transparent" aria-label="Pinterest"><i
+                                class="bi bi-pinterest"></i></a>
+                        <button class="footer-social-link border-0 bg-transparent" aria-label="YouTube"><i class="bi bi-youtube"></i></button>                        
+                        <button class="footer-social-link border-0 bg-transparent" aria-label="Twitter"><i class="bi bi-twitter-x"></i></button>
+                        <button class="footer-social-link border-0 bg-transparent" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></button>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                            <a href="https://play.google.com/store/apps/details?id=de.porsche.one">
+                                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834704/1725432148873.png"
+                                    alt="Get it on Google Play" style="height:45px;">
+                            </a>
+
+                            <a href="https://apps.apple.com/en/app/my-porsche/id1559529059">
+                                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834703/1725432129171.png"
+                                    alt="Download on App Store" style="height:45px;">
+                            </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="mb-3 text-white-50 small">&copy; 2026 Dr. Ing. h.c. F. Porsche AG.</p>
+                    <div class="footer-policy d-flex flex-wrap gap-3 mb-3">
+                        <a href="#">Legal Notice</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Open Source Notice</a>
+                        <a href="#">Whistleblower System</a>
+                    </div>
+                    <p class="footer-note text-white-50 mb-4">This front-end recreation is for learning purposes and is
+                        visually inspired by the Porsche international website.</p>
+                    <div class="text-center">
+                        <span class="brand-logo footer-brand d-inline-block">PORSCHE</span>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        const navbar = document.getElementById("navbar");
+        const reveals = document.querySelectorAll(".reveal-up");
+        const heroVideo = document.getElementById("heroVideo");
+        const videoToggle = document.getElementById("videoToggle");
+
+        const updateNavbar = () => {
+            navbar.classList.toggle("scrolled", window.scrollY > 60);
+        };
+
+        updateNavbar();
+        window.addEventListener("scroll", updateNavbar);
+
+        if (heroVideo && videoToggle) {
+            heroVideo.muted = true;
+
+            videoToggle.addEventListener("click", async () => {
+                try {
+                    if (heroVideo.paused) {
+                        await heroVideo.play();
+                        videoToggle.innerHTML = '<i class="bi bi-pause-fill"></i>';
+                        videoToggle.setAttribute("aria-label", "Pause video");
+                    } else {
+                        heroVideo.pause();
+                        videoToggle.innerHTML = '<i class="bi bi-play-fill"></i>';
+                        videoToggle.setAttribute("aria-label", "Play video");
+                    }
+                } catch (error) {
+                    console.error("Video playback toggle failed:", error);
+                }
+            });
+        }
+
+        if (window.gsap) {
+            gsap.from(".hero-title", {
+                y: 48,
+                opacity: 0,
+                duration: 1.1,
+                ease: "power3.out"
+            });
+
+            gsap.from(reveals, {
+                y: 26,
+                opacity: 0,
+                duration: 0.9,
+                stagger: 0.12,
+                delay: 0.2,
+                ease: "power2.out"
+            });
+
+            gsap.from(".teaser-card, .journey-card, .discover-card", {
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.12,
+                ease: "power2.out",
+                delay: 0.35
+            });
+        }
+    </script>
+</body>
+
+</html>
