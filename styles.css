@@ -146,7 +146,9 @@ video {
 }
 
 .hero-row {
+    align-items: flex-end !important;
     padding-top: 4rem;
+    padding-bottom: 5rem;
 }
 
 .hero-kicker {
@@ -169,6 +171,7 @@ video {
     border-width: 1px;
     font-size: 0.76rem;
     letter-spacing: 0.03rem;
+    margin-top: 1.25rem;
 }
 
 .hero-meta {
@@ -257,8 +260,8 @@ video {
 }
 
 .journey-head {
-    background: #fff;
-    color: var(--porsche-text);
+    background: #000;
+    color: #fff;
     margin: -4.8rem 0 2.6rem 0;
     padding: 3rem 1.5rem 2rem;
 }
